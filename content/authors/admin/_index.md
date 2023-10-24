@@ -40,7 +40,7 @@ skills:
   - description: ""
     icon: database
     icon_pack: fas
-    name: Cleaning Data
+    name: Data Cleaning
     percent: 50
   name: Technical
 - color: '#9bf6ff'
