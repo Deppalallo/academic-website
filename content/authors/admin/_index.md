@@ -3,47 +3,46 @@ bio: My research interests include distributed robotics, mobile computing and pr
   matter.
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-first_name: Shiung Wu
+  - course: Bachelor of Science
+    institution: Sam Ratulangi University
+    year: 2022
+first_name: Harun
 highlight_name: true
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-last_name: Chien
-name_pronunciation: Chien Shiung Wu
+- Mathematics
+- Computational mathematics
+- Data Analysis
+last_name: Deppalallo
+name_pronunciation: ""
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
-role: Professor of Artificial Intelligence
+- name: Samratulangi University
+  url: https://www.unsrat.ac.id/
+role: Mathematics Student
 skills:
 - items:
   - description: ""
     icon: python
     icon_pack: fab
     name: Python
-    percent: 80
+    percent: 30
   - description: ""
     icon: chart-line
     icon_pack: fas
-    name: Data Science
-    percent: 100
+    name: Data Visualization
+    percent: 50
+  - description: ""
+    icon: r-project
+    icon_pack: fab
+    name: RStudio
+    percent: 50
   - description: ""
     icon: database
     icon_pack: fas
-    name: SQL
-    percent: 40
+    name: Cleaning Data
+    percent: 50
   name: Technical
-- color: '#eeac02'
-  color_border: '#f0bf23'
+- color: '#9bf6ff'
+  color_border: '#9bf6ff'
   items:
   - description: ""
     icon: person-hiking
@@ -51,15 +50,15 @@ skills:
     name: Hiking
     percent: 60
   - description: ""
-    icon: cat
+    icon: futbol
     icon_pack: fas
-    name: Cats
-    percent: 100
-  - description: ""
-    icon: camera-retro
-    icon_pack: fas
-    name: Photography
+    name: Playing Football
     percent: 80
+  - description: ""
+    icon: music
+    icon_pack: fas
+    name: Playing piano/organ
+    percent: 70
   name: Hobbies
 social:
 - icon: envelope
@@ -67,27 +66,24 @@ social:
   link: /#contact
 - display:
     header: true
-  icon: twitter
+  icon: instagram
   icon_pack: fab
-  label: Follow me on Twitter
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  label: Follow me on Instagram
+  link: https://www.instagram.com/hd03.00/
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/Deppalallo
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
-- icon: cv
-  icon_pack: ai
-  link: uploads/resume.pdf
+  link: ""
+- icon: youtube
+  icon_pack: fab
+  link: https://www.youtube.com/@HarunDeppalallo/videos
 status:
-  icon: ☕️
+  icon:
 superuser: true
-title: 吳健雄
+title: "Harun Deppalallo"
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+My name is Harun Deppalallo. I'm from West Sulawesi, Indonesia. I created this website to share my ideas about what I have learned from university and my independent studies. I'm still learning and if you have any adea, you can share it to me.
 {style="text-align: justify;"}
