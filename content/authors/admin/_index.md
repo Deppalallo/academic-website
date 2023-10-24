@@ -19,7 +19,9 @@ organizations:
   url: https://www.unsrat.ac.id/
 role: Mathematics Student
 skills:
-- items:
+- color: '#9bf6ff'
+  color_border: '#9bf6ff'
+  items:
   - description: ""
     icon: python
     icon_pack: fab
