@@ -1,6 +1,5 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests include Math, Statistics and Computational.
 education:
   courses:
   - course: Bachelor of Science
@@ -15,7 +14,7 @@ interests:
 last_name: Deppalallo
 name_pronunciation: ""
 organizations:
-- name: Samratulangi University
+- name: Sam Ratulangi University
   url: https://www.unsrat.ac.id/
 role: Mathematics Student
 skills:
@@ -41,7 +40,7 @@ skills:
     icon: database
     icon_pack: fas
     name: Data Cleaning
-    percent: 50
+    percent: 40
   name: Technical
 - color: '#9bf6ff'
   color_border: '#9bf6ff'
@@ -50,17 +49,22 @@ skills:
     icon: person-hiking
     icon_pack: fas
     name: Hiking
-    percent: 60
+    percent: 50
   - description: ""
     icon: futbol
     icon_pack: fas
     name: Playing Football
-    percent: 80
+    percent: 75
   - description: ""
     icon: music
     icon_pack: fas
-    name: Playing piano/organ
-    percent: 70
+    name: Playing piano
+    percent: 50
+  - description: ""
+    icon: laptop
+    icon_pack: fas
+    name: Video Editing
+    percent: 30
   name: Hobbies
 social:
 - icon: envelope
@@ -82,7 +86,7 @@ social:
   icon_pack: fab
   link: https://www.youtube.com/@HarunDeppalallo/videos
 status:
-  icon:
+  icon: 🧑‍💻️
 superuser: true
 title: "Harun Deppalallo"
 ---
