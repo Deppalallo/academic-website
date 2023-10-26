@@ -38,7 +38,7 @@ sections:
       text_color_light: true
 - block: about.biography
   content:
-    title: Biography
+    title: Welcome!
     username: admin
   id: about
 - block: skills
@@ -52,27 +52,27 @@ sections:
   content:
     date_format: Jan 2006
     items:
-    - company: GenCoin
-      company_logo: org-gc
+    - company: Example
+      company_logo: 
       company_url: ""
       date_end: ""
-      date_start: "2021-01-01"
+      date_start: "2023-01-01"
       description: |2-
           Responsibilities include:
 
-          * Analysing
-          * Modelling
-          * Deploying
-      location: California
+          * None
+          * None
+          * None
+      location: Indonesia
       title: CEO
-    - company: University X
+    - company: Example
       company_logo: org-x
       company_url: ""
-      date_end: "2020-12-31"
-      date_start: "2016-01-01"
-      description: Taught electronic engineering and researched semiconductor physics.
-      location: California
-      title: Professor of Semiconductor Physics
+      date_end: ""
+      date_start: "2023-01-01"
+      description: There is no Experience
+      location: Indonesia
+      title: None
     title: Experience
   design:
     columns: "2"
@@ -121,7 +121,7 @@ sections:
     filters:
       folders:
       - project
-    title: Projects
+    title: Blogs
   design:
     columns: "1"
     flip_alt_rows: false
@@ -152,21 +152,16 @@ sections:
   design:
     columns: "2"
     view: citation
-- block: collection
-  content:
-    filters:
-      folders:
-      - event
-    title: Recent & Upcoming Talks
-  design:
-    columns: "2"
-    view: compact
-  id: talks
-- block: tag_cloud
-  content:
-    title: Popular Topics
-  design:
-    columns: "2"
+# - block: collection
+#   content:
+#     filters:
+#       folders:
+#       - event
+#     title: Recent & Upcoming Talks
+#   design:
+#     columns: "2"
+#     view: compact
+#   id: talks
 - block: contact
   content:
     address:

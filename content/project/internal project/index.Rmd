@@ -1,0 +1,44 @@
+---
+date: "2023-10-26T00:00:00Z"
+external_link: ""
+image:
+  caption: ""
+  focal_point: Smart
+links:
+- icon: twitter
+  icon_pack: fab
+  name: Follow
+  url: https://twitter.com/georgecushen
+slides: example
+summary: An example of visualization Penguins data using ggplot2 package.
+tags:
+- Deep Learning
+title: Ggplot
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+---
+
+This blog post will teach you how to create a ggplot using an open-source dataset called "penguins"
+
+Instal package
+
+```{r}
+library(palmerpenguins)
+library(highcharter)
+library(ggplot2)
+```
+
+Let's take a brief at the dataset using the head function
+```{r}
+head(penguins)
+```
+
+Now we can create the scatter
+```{r}
+na.omit(penguins) %>% 
+  ggplot(aes(bill_length_mm, bill_depth_mm, color = species))+
+  geom_point()
+```
+
