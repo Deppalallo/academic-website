@@ -9,8 +9,7 @@ first_name: Harun
 highlight_name: true
 interests:
 - Mathematics
-- Computational mathematics
-- Data Analysis
+- Data Analytics
 last_name: Deppalallo
 name_pronunciation: ""
 organizations:
@@ -91,5 +90,5 @@ superuser: true
 title: "Harun Deppalallo"
 ---
 
-My name is Harun Deppalallo. I'm from West Sulawesi, Indonesia. I created this website to share my ideas about what I have learned from university and my independent studies. I'm still learning and if you have any adea, you can share it to me.
+My name is Harun Depalallo. I am from West Sulawesi, Indonesia. I created this website to share ideas and knowledge that I learned at university or that I learned on my own. I'm still learning and if you have any ideas, you may be able to share them with me.
 {style="text-align: justify;"}
