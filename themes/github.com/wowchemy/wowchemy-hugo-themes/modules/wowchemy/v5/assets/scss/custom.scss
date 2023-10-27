@@ -14,3 +14,42 @@ h1 {
     font-size: 2.25rem;
     color: darkslateblue;
 }
+
+.portrait-title h2 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #000;
+    margin: 20px 0 10px;
+}
+
+.portrait-title h3 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.54);
+    margin: 0 0 10px;
+}
+
+.big-icon {
+  font-size: 1rem; }
+  
+#profile .network-icon {
+    margin-top: 0.1rem;
+}
+
+body {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: inherit;
+    color: inherit;
+    background-color: white;
+    padding-top: 0;
+    counter-reset: captions;
+    overflow-x: hidden;
+}
+
+
+
+img, video {
+    height: auto;
+    max-width: 100%;
+}
