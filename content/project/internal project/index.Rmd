@@ -10,24 +10,25 @@ links:
   name: Follow
   url: https://twitter.com/georgecushen
 slides: example
-summary: An example of visualization Penguins data using ggplot2 package.
+summary: An example of visualization Penguins data using highcharter package.
 tags:
 - Deep Learning
-title: Ggplot
+title: Highcharter
 url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
 ---
 
-This blog post will teach you how to create a ggplot using an open-source dataset called "penguins"
+This blog post will teach you how to create a highcharter using an open-source dataset called "penguins"
 
-Instal package
+```{r, include=FALSE}
 
-```{r}
+# Instal packages
+
 library(palmerpenguins)
 library(highcharter)
-library(ggplot2)
+library(widgetframe)
 ```
 
 Let's take a brief at the dataset using the head function
@@ -35,10 +36,18 @@ Let's take a brief at the dataset using the head function
 head(penguins)
 ```
 
-Now we can create the scatter
+Now we can create the scatter plot between bill_length_mm and bill_length_mm
 ```{r}
-na.omit(penguins) %>% 
-  ggplot(aes(bill_length_mm, bill_depth_mm, color = species))+
-  geom_point()
+scatter_plot  <- na.omit(penguins) %>% 
+  hchart("scatter", hcaes(x = bill_length_mm, y = bill_depth_mm, group = species)) %>% 
+  hc_add_theme(hc_theme_google()) %>% 
+  hc_title(text = "Scatter Plot data Penguins",
+           style = list(fontSize = "25px", fontWeight = "bold")) %>% 
+  hc_subtitle(text = "By Bill Length (mm) and Bill Depth (mm)",
+              style = list(fontSize = "16px")) %>% 
+  hc_tooltip(pointFormat = "<b> Bill Length (mm) : </b> {point.x} <br> <b> Bill Depth (mm): </b> {point.y} <br>") %>% 
+  hc_credits(enabled = TRUE, text = "@harun_deppalallo")
+
+frameWidget(scatter_plot)
 ```
 
