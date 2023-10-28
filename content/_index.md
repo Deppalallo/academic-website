@@ -113,8 +113,10 @@ sections:
     buttons:
     - name: All
       tag: '*'
-    - name: Deep Learning
-      tag: Deep Learning
+    - name: Mathematics
+      tag: Mathematics
+    - name: Visualization
+      tag: Visualization
     - name: Other
       tag: Demo
     default_button_index: 0

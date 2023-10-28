@@ -12,7 +12,7 @@ links:
 slides: example
 summary: An example of visualization Penguins data using highcharter package.
 tags:
-- Deep Learning
+- Visualization
 title: Highcharter
 url_code: ""
 url_pdf: ""

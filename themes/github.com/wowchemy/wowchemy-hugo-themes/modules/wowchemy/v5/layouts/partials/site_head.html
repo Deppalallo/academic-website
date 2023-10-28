@@ -220,3 +220,7 @@
   {{ end }}
   {{ partial "functions/get_hook" (dict "hook" "head-end" "context" .) }}
 </head>
+
+{{ if or .Params.math .Site.Params.math }}
+{{ partial "math.html" . }}
+{{ end }}

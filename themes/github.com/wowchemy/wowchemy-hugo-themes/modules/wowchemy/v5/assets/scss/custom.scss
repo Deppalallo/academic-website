@@ -4,8 +4,8 @@
 }
 
 .avatar {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin: 0 auto;
     object-fit: cover;
 }
@@ -52,4 +52,9 @@ body {
 img, video {
     height: auto;
     max-width: 100%;
+}
+
+ code .MathJax {
+  color: black;
+  background-color: white;
 }
