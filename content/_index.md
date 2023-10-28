@@ -117,6 +117,8 @@ sections:
       tag: Mathematics
     - name: Visualization
       tag: Visualization
+    - name: Machine Learning
+      tag: Machine Learning
     - name: Other
       tag: Demo
     default_button_index: 0
@@ -126,7 +128,7 @@ sections:
     title: Blogs
   design:
     columns: "1"
-    flip_alt_rows: false
+    flip_alt_rows: true
     view: showcase
   id: projects
 - block: collection

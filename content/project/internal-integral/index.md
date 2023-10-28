@@ -45,7 +45,7 @@ $$\int2xdx=x^2$$
 
 ## Rumus Integral
 
-$$\int x^n dx = \frac{X^{n+1}}{n+1}+C$$
+1. $$\int x^n dx = \frac{X^{n+1}}{n+1}+C$$
 
 $$\int dx=x+C$$
 
