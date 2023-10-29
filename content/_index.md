@@ -78,31 +78,31 @@ sections:
     columns: "2"
 - block: accomplishments
   content:
-    date_format: Jan 2006
+    date_format: ""
     items:
-    - certificate_url: https://www.coursera.org
+    - certificate_url: https://www.dicoding.com/certificates/6RPN4Y319X2M
+      date_end: "2023-12-25"
+      date_start: "2023-09-29"
+      description: "Pembelajaran dasar-dasar pada Ilmu Dasar Data Science"
+      organization: Dicoding
+      organization_url: https://www.dicoding.com/
+      title: Belajar Dasar Data Science
+      url: https://www.dicoding.com/academies/my
+    - certificate_url: //www.dicoding.com/certificates/L4PQ85GKVZO1
       date_end: ""
-      date_start: "2021-01-25"
-      description: ""
-      organization: Coursera
-      organization_url: https://www.coursera.org
-      title: Neural Networks and Deep Learning
-      url: ""
-    - certificate_url: https://www.edx.org
+      date_start: "2023-09-29"
+      description: "Pembelajaran dasar-dasar pada Structured Query Language (SQL)"
+      organization: Dicoding
+      organization_url: https://www.dicoding.com/
+      title: Belajar Dasar Structured Query Language (SQL)
+      url: https://www.dicoding.com/academies/my
+    - certificate_url: "//www.dicoding.com/certificates/L4PQ85GKVZO1"
       date_end: ""
-      date_start: "2021-01-01"
-      description: Formulated informed blockchain models, hypotheses, and use cases.
-      organization: edX
-      organization_url: https://www.edx.org
-      title: Blockchain Fundamentals
-      url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    - certificate_url: https://www.datacamp.com
-      date_end: "2020-12-21"
-      date_start: "2020-07-01"
-      description: ""
-      organization: DataCamp
-      organization_url: https://www.datacamp.com
-      title: Object-Oriented Programming in R
+      date_start: "2023-09-29"
+      description: "Pembelajaran yang berfokus pada hal-hal fundamental terkait bahasa pemrograman Python"
+      organization: Dicoding
+      organization_url: https://www.dicoding.com/
+      title: Memulai Pemrograman dengan Python
       url: ""
     subtitle: null
     title: Accomplish&shy;ments
@@ -117,8 +117,8 @@ sections:
       tag: Mathematics
     - name: Visualization
       tag: Visualization
-    - name: Machine Learning
-      tag: Machine Learning
+    - name: Data Analitics
+      tag: Data Analitics
     - name: Other
       tag: Demo
     default_button_index: 0
