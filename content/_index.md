@@ -178,18 +178,18 @@ sections:
     appointment_url: https://calendly.com
     autolink: true
     contact_links:
-    - icon: twitter
+    - icon: instagram
       icon_pack: fab
-      link: https://twitter.com/Twitter
-      name: DM Me
+      link: https://www.instagram.com/hd03.00/
+      name: Follow Me
     directions: Harun' Home
-    email: harundeppalallo@gmail.com
+    email: hd.academic23@gmail.com
     form:
       formspree:
-        id: null
+        id: xoqobqlo
       netlify:
         captcha: false
-      provider: netlify
+      provider: formspree
     subtitle: null
     text: Kirim masukan
     title: Contact
