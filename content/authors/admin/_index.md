@@ -17,8 +17,8 @@ organizations:
   url: https://www.unsrat.ac.id/
 role: Mathematics Student
 skills:
-- color: '#9bf6ff'
-  color_border: '#9bf6ff'
+- color: '#b8c0ff'
+  color_border: '#b8c0ff'
   items:
   - description: ""
     icon: python
@@ -41,19 +41,19 @@ skills:
     name: Data Cleaning
     percent: 40
   name: Technical
-- color: '#9bf6ff'
-  color_border: '#9bf6ff'
+- color: '#b8c0ff'
+  color_border: '#b8c0ff'
   items:
   - description: ""
     icon: person-hiking
     icon_pack: fas
     name: Hiking
-    percent: 50
+    percent: 40
   - description: ""
     icon: futbol
     icon_pack: fas
     name: Playing Football
-    percent: 75
+    percent: 50
   - description: ""
     icon: music
     icon_pack: fas
@@ -90,5 +90,5 @@ superuser: true
 title: "Harun Deppalallo"
 ---
 
-My name is Harun Depalallo. I am from West Sulawesi, Indonesia. I created this website to share ideas and knowledge that I learned at university or that I learned on my own. I'm still learning and if you have any ideas, you may be able to share them with me.
+I created this website to share ideas and knowledge that I learned at university or that I learned on my own. I'm still learning and if you have any ideas, you may be able to share them with me.
 {style="text-align: justify;"}

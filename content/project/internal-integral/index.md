@@ -5,10 +5,10 @@ image:
   caption: Photo by Harun Deppalallo
   focal_point: Smart
 links:
-- icon: twitter
+- icon: instagram
   icon_pack: fab
   name: Follow
-  url: https://twitter.com/georgecushen
+  url: https://www.instagram.com/hd03.00/
 slides: example
 summary: Proses mencari antiturunan suatu fungsi disebut integrasi. Proses kebalikan dari mencari turunan adalah mencari integral. Integral suatu fungsi mewakili keluarga kurva. Menemukan turunan dan integral membentuk kalkulus dasar.
 tags:
