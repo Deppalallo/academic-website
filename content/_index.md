@@ -127,8 +127,8 @@ sections:
       - project
     title: Blogs
   design:
-    columns: "1"
-    flip_alt_rows: false
+    columns: "2"
+    flip_alt_rows: true
     view: showcase
   id: projects
 - block: collection
