@@ -5,10 +5,10 @@ image:
   caption: ""
   focal_point: Smart
 links:
-- icon: twitter
+- icon: instagram
   icon_pack: fab
   name: Follow
-  url: https://twitter.com/georgecushen
+  url: https://www.instagram.com/hd03.00/
 slides: example
 summary: Saya mencoba membuat penyebaran covid-19 menggunakan highcharter dan worldgeojson dan menurut saya tampilannya keren!
 tags:
@@ -49,7 +49,9 @@ library(highcharter)
 
     ## Registered S3 method overwritten by 'quantmod':
     ##   method            from
-    ##   as.zoo.data.frame zoo
+    ##   as.zoo.data.frame zoo 
+    ## Highcharts (www.highcharts.com) is a Highsoft software product which is
+    ## not free for commercial and Governmental use
 
 ``` r
 library(widgetframe)

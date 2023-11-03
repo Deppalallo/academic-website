@@ -5,10 +5,10 @@ image:
   caption: ""
   focal_point: Smart
 links:
-- icon: twitter
+- icon: instagram
   icon_pack: fab
   name: Follow
-  url: https://twitter.com/georgecushen
+  url: https://www.instagram.com/hd03.00/
 slides: example
 summary: An example of visualization Penguins data using highcharter package.
 tags:
