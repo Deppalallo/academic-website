@@ -84,7 +84,7 @@ $\sin A + \sin B= 2 \sin \frac{1}{2}(A+B)\cdot \cos \frac{1}{2}(A-B)$
 
 $Jadi, \space \sin x+ \sin 3x=2 \sin \frac{1}{2}(x+3x)\cdot \cos \frac{1}{2}(x-3x)$
 
-$\hspace{3.7 cm}$$=2 \sin 2x \cdot \cos(-c)$
+$\hspace{3.7 cm}$$=2 \sin 2x \cdot \cos(-x)$
 
 $\hspace{3.7 cm}$$=2 \sin 2x \cdot \cos x$
 
