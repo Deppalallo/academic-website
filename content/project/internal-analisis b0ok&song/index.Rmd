@@ -1,0 +1,200 @@
+---
+date: "2023-11-11T00:00:00Z"
+external_link: ""
+image:
+  caption: ""
+  focal_point: Smart
+links:
+- icon: instagram
+  icon_pack: fab
+  name: Follow
+  url: https://www.instagram.com/hd03.00/
+slides: example
+summary: Analisis Penjualan Buku terlaris Amazon 2009-2019 dan analisis Lagu Billboard The Hot 100.
+tags:
+- Visualization
+title: Buku Terlaris Teratas Amazon 2009 - 2019 dan Lagu "The Hot 100" di Billboard
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+---
+
+## Load Packages yang dubutuhkan
+
+```{r, include=T}
+
+library(flexdashboard)
+library(tidyverse)
+library(highcharter)
+library(gt)
+library(htmltools)
+library(viridis)
+library(palmerpenguins)
+library(widgetframe)
+```
+
+## Analisis Penjualan Buku terlaris Amazon 2009-2019
+
+##### Tentang Kumpulan Data
+
+Dataset Top 50 buku terlaris Amazon tahun 2009 hingga 2019. Berisi 550 buku, datanya dikategorikan menjadi fiksi dan nonfiksi menggunakan Goodreads
+
+Selanjutnya kita mengimport dataset yang akan digunakan dan menampilkan 10 baris tabel pertama
+```{r}
+book <- read_csv("book.csv")
+head(book)
+```
+
+Kita akan mencari tahu  Buku Terpopuler tahun 2009-2019 berdasarkan Review
+```{r}
+# colors
+custom_colors <- viridis::turbo(n = 17)
+
+#most popular books by reviews
+populer_book <- book %>% 
+  arrange(desc(Reviews)) %>% 
+  head(17) %>% 
+  hchart('bar', hcaes(x = Name, y = Reviews, color = custom_colors)) %>% 
+  hc_add_theme(hc_theme_flatdark()) %>% 
+  hc_tooltip(pointFormat = '<b> Jumlah Ulasan : </b> {point.y} <br>') %>% 
+  hc_title(text = 'Buku Terpopuler dari tahun 2009-2019',
+           style = list(fontSize = '25px', fontWeight = 'bold')) %>% 
+  hc_subtitle(text = 'Berdasarkan Ulasan (Reviews)',
+              style =list(fontSize = '16px')) %>% 
+  hc_credits(enabled = TRUE, text = '@deppalallo_harun')
+frameWidget(populer_book)
+```
+
+
+Kita juga akan mencari tahu  Penulis Terpopuler tahun 2009-2019 berdasarkan Review
+```{r}
+# colors
+custom_colors <- viridis::plasma(n = 15)
+
+#most popular autors by reviews
+populer_author <- book %>% 
+  group_by(Author) %>% 
+  summarise(Reviews=sum(Reviews)) %>% 
+  arrange(desc(Reviews)) %>% 
+  head(15) %>% 
+  hchart('column', hcaes(x = Author, y = Reviews, color = custom_colors)) %>% 
+  hc_add_theme(hc_theme_flatdark()) %>% 
+  hc_tooltip(pointFormat = '<b> Jumlah Ulasan : </b> {point.y} <br>') %>% 
+  hc_title(text = 'Penulis Terpopuler dari tahun 2009-2019',
+           style = list(fontSize = '25px', fontWeight = 'bold')) %>% 
+  hc_subtitle(text = 'Berdasarkan Ulasan (Reviews)',
+              style = list(fontSize = '16px')) %>% 
+  hc_credits(enabled = TRUE, text = '@deppalallo_harun')
+
+frameWidget(populer_author)
+```
+
+
+Kita juga akan melihat  Kategori Terpopuler tahun 2009-2019 berdasarkan Review
+```{r}
+#colors
+custom_colors <- viridis::turbo(n=2)
+
+#Most common gendre
+
+populer_kategori <- book %>% 
+  group_by(Genre) %>% 
+  summarise(count = n()) %>% 
+  hchart('pie', hcaes(x = Genre, y = count, color = custom_colors)) %>% 
+  hc_add_theme(hc_theme_flatdark()) %>% 
+  hc_tooltip(pointFormat = '<b> Proporsi : </b> {point.percentage:,.2f}%') %>% 
+  hc_title(text = 'Genre Terpopuler dari Tahun 2009-2019',
+           style = list(fontSize = '15px', fontWeight = 'bold')) %>% 
+  hc_credits(enabled = TRUE, text = '@deppalallo_harun')
+
+frameWidget(populer_kategori)
+```
+
+##### Tabel Buku terpopuler berdasarkan ulasan pengguna
+
+```{r}
+#Going to be a dta table
+
+book1 <- book %>% 
+  filter(User_Rating >= 4.9) %>% 
+  arrange(desc(Reviews)) %>% 
+  select(Name, Author)
+
+#HTML table
+
+div(style = 'height:600px; overflow-y:scroll', gt(book1) %>% 
+  tab_header(title = md('Buku Terpopuler dari Tahun 2009-2019'),
+             subtitle = md('Berdasarkan Ulasan Pengguna')) %>% 
+  opt_table_font(font = list(google_font('Chivo'), default_fonts())) %>% 
+  tab_style(locations = cells_column_labels(columns = everything()),
+            style = list(cell_borders(sides = 'bottom', weight = px(2)),
+                         cell_text(weight = 'bold'))) %>%
+    tab_options(table.font.size = px(12L),
+                table.border.top.style = 'none',
+                column_labels.border.bottom.width = 2,
+                table_body.border.top.style = 'none',
+                data_row.padding = px(3))
+)
+
+```
+
+## Analisis Lagu "The Hot 100" di Billboard
+
+##### Tentang Kumpulan Data
+
+Billboard Hot 100 adalah tangga rekaman standar industri musik di Amerika Serikat untuk lagu-lagu, yang diterbitkan mingguan oleh majalah Billboard. Pemeringkatan tangga lagu didasarkan pada penjualan, pemutaran radio, dan streaming online di Amerika Serikat.
+
+Setiap minggu, Billboard merilis chart "The Hot 100" yang berisi lagu-lagu yang sedang tren dalam penjualan dan pemutaran pada minggu itu. Kumpulan data ini adalah kumpulan dari semua tangga lagu "The Hot 100" yang dirilis sejak dimulainya pada tahun 1958.
+
+import dataset yang akan digunakan dan menampilkan 10 baris tabel pertama
+```{r}
+song1 <- read_csv("song1.csv")
+head(song1)
+```
+
+##### Lagu Terpopuler di Billboard
+```{r}
+#colors
+custom_colors <- viridis::plasma(n =20)
+
+# most popular author by weeks on board
+populer_song <- song1 %>% 
+  arrange(desc(weeks_on_board)) %>% 
+  head(20) %>% 
+  hchart('lollipop', hcaes(x = song, y = weeks_on_board, color = custom_colors)) %>% 
+  hc_add_theme(hc_theme_flatdark()) %>% 
+  hc_tooltip(pointFormat = '<b> Number of weeks on board : </b> {point.y} <br>') %>%
+  hc_yAxis(text = list('Weeks on Board')) %>% 
+  hc_xAxis(text = list(text = 'Songs')) %>% 
+  hc_title(text = 'Lagu Terpopuler',
+           style = list(fontSize = '25px', fontWeight = 'bold')) %>% 
+  hc_subtitle(text = 'Berdasarkan (Weeks on Board)',
+              style = list(fontSize = '16px')) %>% 
+  hc_credits(enabled = TRUE, text = '@deppalallo_harun')
+frameWidget(populer_song)
+```
+
+
+##### Artis Terpopuler di Billboard
+```{r}
+#colors
+custom_colors <- viridis::turbo(n=10)
+
+#Most common gendre
+
+populer_artists <- song1 %>% 
+  group_by(artist) %>% 
+  summarise(weeks_on_board=sum(weeks_on_board)) %>% 
+  arrange(desc(weeks_on_board)) %>% 
+  head(10) %>% 
+  hchart('pie', hcaes(x = artist, y = weeks_on_board, color = custom_colors)) %>% 
+  hc_add_theme(hc_theme_flatdark()) %>% 
+  hc_tooltip(pointFormat = '<b> Number of weeks on board : </b> {point.y} <br>') %>% 
+  hc_title(text = 'Artis Terpopuler',
+           style = list(fontSize = '25px', fontWeight = 'bold')) %>% 
+  hc_subtitle(text = 'Berdasarkan Weeks on Board',
+                          style = list(fontSize = '16px')) %>% 
+  hc_credits(enabled = TRUE, text = '@deppalallo_harun')
+frameWidget(populer_artists)
+```
