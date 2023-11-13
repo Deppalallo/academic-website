@@ -37,7 +37,7 @@ $$\frac{\sin 2(\frac{\pi}{4})}{\sin \frac{\pi}{4}+\cos \frac{\pi}{4}}=\frac{1}{\
 $\space$
 
 3. Tentukan Nilai dari
-$$\lim_{x \to \frac{\pi}{4}} \frac{\sin 2x}{\cos x-\sin x}$$
+$$\lim_{x \to \frac{\pi}{4}} \frac{\cos 2x}{\cos x-\sin x}$$
 Penyelesaian :
 $$\lim_{x \to \frac{\pi}{4}}\frac{\cos 2x}{\cos x-\sin x}=\lim_{x \to \frac{\pi}{4}}\frac{\cos^2x-\sin^2x}{\cos x-\sin x}$$
 $$=\lim_{x \to \frac{\pi}{4}} \frac{(\cos x-\sin x)(\cos x+\sin x)}{\cos x-\sin x}$$
