@@ -104,6 +104,15 @@ sections:
       organization_url: https://www.dicoding.com/
       title: Memulai Pemrograman dengan Python
       url: ""
+    - certificate_url: https://www.dicoding.com/certificates/1RXY0G0QMZVM
+      date_end: ""
+      date_start: "2023-09-29"
+      description: "Menjalankan berbagai tahapan dalam analisis data untuk menjawab tantangan bisnis menggunakan bahasa pemrograman
+Python. "
+      organization: Dicoding
+      organization_url: https://www.dicoding.com/
+      title: Belajar Analisis Data dengan Python
+      url: https://www.dicoding.com/academies/my
     subtitle: null
     title: Accomplish&shy;ments
   design:
@@ -117,8 +126,8 @@ sections:
       tag: Mathematics
     - name: Visualization
       tag: Visualization
-    - name: Data Analitics
-      tag: Data Analitics
+    - name: Data Analysis
+      tag: data_analysis
     - name: Other
       tag: Demo
     default_button_index: 0

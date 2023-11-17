@@ -1,11 +1,11 @@
 ---
-date: "2016-04-27T00:00:00Z"
-external_link: https://example.org
+date: "2023-11-17T00:00:00Z"
+external_link: https://proyek-dicoding-wk7t4rln9wwwlkx2frkc5i.streamlit.app/
 image:
   caption: Photo by Toa Heftiba on Unsplash
   focal_point: Smart
-summary: An example of linking directly to an external project website using `external_link`.
+summary: Dashboard Sederhana Proyek Analisis Data `external_link`.
 tags:
-- Demo
-title: External Project
+- data_analysis
+title: Dashboard Sederhana Proyek Dicoding Streamlit dengan Python
 ---
