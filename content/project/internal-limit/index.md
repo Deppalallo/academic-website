@@ -111,10 +111,113 @@ karena hasilnya $\frac{0}{0}$ bisa juga menyelesaikan soal diatas saya menggunak
 
 $$\lim_{x \to 0} \frac{x^4-4x}{3x^2+x^2}=\lim_{x \to 0} \frac{4x^3-4}{6x+2x}=\frac{4\cdot 0^3-4}{6\cdot 0+2\cdot 0}=\frac{-4}{0}= Tidak \space terdefinisi$$
 
+$\space$
 
+9. Tentukan nilai dari
+$$\lim_{x \to \infty} \frac{(2x-3)(3x+1)}{2x^2+x+1}$$
+Penyelesaian :
 
+Sebelum masuk dalam penyelesaian, kita akan melihat salah satu sifat limit yang akan menjadi pedoman untuk menyelesaikan soal diatas.
 
+$$\lim_{x \to \infty} \frac{Ax^m+Bx^{m-1}+Cx^{m-2}+ \cdots}{Px^n+Qx^{n-1}+Rx^{n-2}+ \cdots}=$$
 
+* Bernilai $0$ jika $m<n$
+* Bernilai $\frac{A}{P}$ jika $m=n$
+* Bernilai $\infty$ jika $m>n$
+
+Selanjutnya kita mengerjakan soal
+$$\lim_{x \to \infty} \frac{(2x-3)(3x+1)}{2x^2+x+1}$$
+Kalikan pembilangnya 
+$$\lim_{x \to \infty} \frac{6x^2+2x-9x-3}{2x^2+x+1}=\lim_{x \to \infty} \frac{6x^2-7x-3}{2x^2+x+1}$$
+limit diatas sama persis dengan sifat yang telah kita tuliskan sebelumnya, maka untuk melanjutkan peyelesaiannya tinggal mengambil nilai berdasarkan sifat
+
+$$m=2, \space n=2$$
+$$A=6, \space P=2$$
+
+Karena $m=n$, maka kita gunakan 
+* Bernilai $\frac{A}{P}$ jika $m=n$
+
+$$\lim_{x \to \infty} \frac{6x^2-7x-3}{2x^2+x+1}=\frac{6}{2}=3$$
+
+$\space$
+
+10. Nilai dari
+$$\frac{2x^3+3x^2-5x+4}{2x^4-4x^2+9}$$
+
+Penyelesaian :
+
+Untuk menyelesaikan soal tersebut, pembilang dan penyebutnya dikalikan dengan $\frac{1}{pangkat \space tertinggi}$
+
+Kita lihat bahwa pangkat tertinggi dari soal diatas adalah $x^4$.
+
+maka, 
+$$\lim_{x \to \infty} \frac{2x^3+3x^2-5x+4}{2x^4-4x^2+9} \times \frac{\frac{1}{x^4}}{\frac{1}{x^4}}$$
+$$\lim_{x \to \infty} \frac{2x^3(\frac{1}{x^4})+3x^2(\frac{1}{x^4})-5x+4(\frac{1}{x^4})}{2x^4(\frac{1}{x^4})-4x^2(\frac{1}{x^4})+9(\frac{1}{x^4})}$$
+$$\lim_{x \to \infty} \frac{\frac{2}{x}+\frac{3}{x^2}-\frac{5}{x^2}+\frac{4}{x^4}}{2-\frac{4}{x^2}+\frac{9}{x^4}}$$
+
+Subtitusi $x=\infty$
+
+$$ \frac{\frac{2}{\infty}+\frac{3}{\infty^2}-\frac{5}{\infty^2}+\frac{4}{\infty^4}}{2-\frac{4}{\infty^2}+\frac{9}{\infty^4}}$$
+Ingat bahwa bilangan yang dibagi $\infty$ hasilnya sama dengan $0$
+$$ \frac{\frac{2}{\infty}+\frac{3}{\infty^2}-\frac{5}{\infty^2}+\frac{4}{\infty^4}}{2-\frac{4}{\infty^2}+\frac{9}{\infty^4}}=\frac{0+0-0+0}{2-0+0}=\frac{0}{2}=0$$
+
+$\space$
+
+11. Nilai dari
+$$\lim_{x \to \infty} \left( 3x + \sin \frac{1}{x} \right)$$
+Penyelesaian :
+
+Untuk menyelesaikan soal diatas, gunakan konsep limit.
+$$\lim_{x \to c} (f(x)+g(x))=\lim_{x \to c} f(x) + \lim_{x \to c} g(x)$$
+
+misalkan
+$$p=\frac{1}{x}, \space sehingga \space x=\frac{1}{p}$$
+$$Jika \space x \to \infty, \space maka \space p \to 0$$
+
+jadi soal diatas kita akan merobah dari $x \to \infty$ menjadi $p \to 0$ dan mensubtitusi nilai $x=\frac{1}{p}$
+
+$$\lim_{p \to 0} \left( 3 \left(\frac{1}{p} \right) + \sin \frac{1}{\frac{1}{p}} \right)$$
+$$=\lim_{p \to 0} \left( \frac{3}{p}+ \sin p \right)= \lim_{p \to 0} \frac{3}{p} + \lim_{p \to 0} \sin p$$
+$$=\infty + \sin 0= \infty +0=\infty$$
+
+$\space$
+
+12. Nilai dari
+$$\lim_{x \to \infty} y \sin \frac{3}{y} \cdot \cos \frac{5}{y}$$
+
+Penyelesaian :
+
+$$Misal \space y = \frac{1}{a}$$
+$$Maka \space \infty = \frac{1}{a}$$
+$$a=0$$
+
+$$\lim_{a \to 0} \frac{1}{a} \sin3a \cdot \cos 5a=\lim_{a \to 0} \frac{\sin3a \cdot \cos 5a}{a} \times \frac{3}{3}$$
+$$=\lim_{a \to 0} \frac{3\sin3a \cdot 3\cos 5a}{3a}$$
+$$=\lim_{a \to 0} \frac{\sin 3a}{3a}\cdot \lim_{a \to 0} 3 \cos 5a$$
+
+Ingat sifat limit
+$$\lim_{x \to 0} \frac{\sin mx}{nx}=\frac{m}{n}$$
+
+maka,
+$$\frac{3}{3} \cdot 3 \cos 5(0)=1 \cdot 3 \cos 0=1 \cdot 3(1)=3$$
+
+$\space$
+
+13. Asimtot datar dari fungsi $f$ dengan
+$$f(x)=\frac{x^3+2x+1}{x^3-x}$$
+
+Penyelesaian :
+
+Asimtot datar(Asimtot Horizontal)
+$$y=\lim_{x \to \infty} f(x)$$
+$$y=\lim_{x \to \infty} \frac{x^3+2x+1}{x^3-x}$$
+
+sama dengan no. 9, kita gunakan sifat berikut
+$$\lim_{x \to \infty} \frac{Ax^m+Bx^{m-1}+Cx^{m-2}+ \cdots}{Px^n+Qx^{n-1}+Rx^{n-2}+ \cdots}=$$
+* Bernilai $\frac{A}{P}$ jika $m=n$
+
+$$y=\lim_{x \to \infty} \frac{x^3+2x+1}{x^3-x}$$
+$$y=\frac{1}{1}=1$$
 
 
 
