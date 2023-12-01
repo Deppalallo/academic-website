@@ -113,6 +113,14 @@ Python. "
       organization_url: https://www.dicoding.com/
       title: Belajar Analisis Data dengan Python
       url: https://www.dicoding.com/academies/my
+    - certificate_url: "https://www.dicoding.com/certificates/NVP78RE6VXR0"
+      date_end: ""
+      date_start: "2023-09-29"
+      description: "Pembelajaran yang berfokus pada pembelajaran Machine Learning bahasa pemrograman Python"
+      organization: Dicoding
+      organization_url: https://www.dicoding.com/
+      title: Belajar Machine Learning untuk Pemula
+      url: https://www.dicoding.com/academies/my
     subtitle: null
     title: Accomplish&shy;ments
   design:
